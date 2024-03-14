@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+  <title>01_수직정렬 클래스</title>
+  <style>
+   div{
+    border:1px solid red;
+  }
+  .cs-fontSize-1{
+    font-size: 1rem;
+  }
+  .cs-fontSize-2{
+    font-size: 2rem;
+  }
+  .cs-fontSize-3{
+    font-size: 3rem;
+  }
+</style>
+</head>
+<body>
+  <div class="container">
+    <!-- 부모요소에 클래스명을 주면 자식 컨텐츠들이 수직으로 정렬 -->
+    <div class="row align-items-start">
+      <div class="col">
+        align-items-start
+      </div>
+      <div class="col">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia ducimus repudiandae corporis saepe nulla, sint voluptatem harum? Provident, voluptatem perferendis.
+      </div>
+      <div class="col">
+        Lorem ipsum dolor sit amet consectetur adipisicing, elit. Fugit praesentium tempora quibusdam expedita, repellendus illum qui amet cumque incidunt nulla veritatis ratione iure dolorem tempore quos modi ad iusto fuga animi consequuntur sequi! Ad dolorem aut eius perferendis architecto ea minima eos amet facere cupiditate quos, tempore laborum consequuntur nam!
+      </div>
+    </div>
+    <div class="row align-items-center">
+      <div class="col">
+       Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum id ut porro assumenda perferendis minima reiciendis in culpa nesciunt architecto.
+     </div>
+     <div class="col">
+      align-items-center
+    </div>
+    <div class="col">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut vitae ex nihil ea, temporibus magnam molestiae adipisci provident animi minima! Vero ut fuga, voluptates id non aliquam molestiae rerum ducimus iure quam, accusamus rem! Voluptatum libero quo assumenda asperiores dolores saepe error, vitae blanditiis commodi, itaque sequi? Quis blanditiis, repudiandae!
+    </div>
+  </div>
+  <div class="row align-items-end">
+    <div class="col">
+      align-items-end
+    </div>
+    <div class="col">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur sunt tempora quaerat tempore at perspiciatis recusandae ea consectetur esse, nostrum unde culpa beatae sequi atque excepturi saepe, deleniti impedit dignissimos assumenda qui? Eaque ex officia, ratione sit aliquam fugiat repellat, vel neque quasi, voluptates, quae libero minima adipisci sapiente commodi.
+    </div>
+    <div class="col">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, deleniti consectetur, natus voluptas animi dicta laboriosam quibusdam saepe esse accusamus?
+    </div>
+  </div>
+  <div class="row align-items-stretch">
+    <div class="col">
+       .row에 있는 align-items-*를 빼면 align-items의 기본 디폴트값인 :stretch가 적용된다.
+    </div>
+    <div class="col">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur sunt tempora quaerat tempore at perspiciatis recusandae ea consectetur esse, nostrum unde culpa beatae sequi atque excepturi saepe, deleniti impedit dignissimos assumenda qui? Eaque ex officia, ratione sit aliquam fugiat repellat, vel neque quasi, voluptates, quae libero minima adipisci sapiente commodi.
+    </div>
+    <div class="col">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, deleniti consectetur, natus voluptas animi dicta laboriosam quibusdam saepe esse accusamus?
+    </div>
+  </div>
+  <div class="row align-items-baseline">
+    <!-- font-size 다르게 준 후 마지막에  align-items-baseline 를 적용해봄 -->
+    <div class="col cs-fontSize-1">
+       align-items-baseline
+    </div>
+    <div class="col cs-fontSize-2">
+      align-items-baseline
+    </div>
+    <div class="col cs-fontSize-3">
+      align-items-baseline
+    </div>
+  </div>
+
+
+  <h1>자식인 컨텐츠 자신에 클래스명을 주어 자기자신을 정렬 : 처음엔 모두 align-self-start로 주고 하나씩 변경하여 변화를 살펴봄</h1>
+  <div class="row bg-info">
+
+    <div class="col align-self-start">
+      One of three columns
+    </div>
+    <div class="col align-self-center">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur sunt tempora quaerat tempore at perspiciatis recusandae ea consectetur esse, nostrum unde culpa beatae sequi atque excepturi saepe, deleniti impedit dignissimos assumenda qui? Eaque ex officia, ratione sit aliquam fugiat repellat, vel neque quasi, voluptates, quae libero minima adipisci sapiente commodi.
+    </div>
+    <div class="col align-self-end">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, deleniti consectetur, natus voluptas animi dicta laboriosam quibusdam saepe esse accusamus?
+    </div>
+    <div class="col"> <!-- align-self-stretch 생략하면 기본값 -->
+      One of three columns
+    </div>
+     <div class="col cs-fontSize-2 align-self-baseline">
+      font-size를 다르게 주고 결과 확인후 align-self-baseline를 추가해본다.
+    </div>
+    <div class="col cs-fontSize-3 align-self-baseline">
+      font-size를 다르게 주고 결과 확인후 align-self-baseline를 추가해본다. 
+    </div>
+  </div>
+</div>
+
+
+<!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+</body>
+</html>

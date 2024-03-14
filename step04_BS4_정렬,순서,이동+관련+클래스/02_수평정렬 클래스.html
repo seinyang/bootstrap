@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+  <title>01_수직정렬 클래스</title>
+  <style>
+   div{
+    border:1px solid red;
+  }
+  .cs-fontSize-1{
+    font-size: 1rem;
+  }
+  .cs-fontSize-2{
+    font-size: 2rem;
+  }
+  .cs-fontSize-3{
+    font-size: 3rem;
+  }
+</style>
+</head>
+<body>
+  <div class="container">
+    <div class="row bg-info"><!-- 기본값으로 생략가능 justify-content-start  -->
+      <div class="col-4">
+        <!-- lorem20 -->
+        <span class="h3">justify-content-start  : 자식요소들이 시작점으로 정렬, 기본값</span>, 
+        align-items: flex-start부터 시작하여 flex-end, center, space-between, space-around 속성값을 가지고 있다.
+      </div>
+      <div class="col-4">
+        Lorem ipsum, dolor sit, amet consectetur adipisicing elit. Rerum nobis optio facilis ducimus blanditiis accusamus corporis, magni aperiam ad beatae.
+      </div>
+    </div>
+    <div class="row justify-content-center bg-warning">
+      <div class="col-4">
+        <span class="h3">justify-content-center  : 자식요소들이 중앙으로 정렬</span> adipisci corporis, praesentium hic quae molestiae error perspiciatis earum quidem dolore?
+      </div>
+      <div class="col-4">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur vitae molestiae inventore qui debitis, minus sit, culpa animi nemo illo.
+      </div>
+    </div>
+    <div class="row justify-content-end bg-success">
+      <div class="col-4">
+        <span class="h3">justify-content-end  : 자식요소들이 끝점으로 정렬</span> soluta in mollitia quae cupiditate pariatur accusantium aperiam quaerat modi quam?
+      </div>
+      <div class="col-4">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores quam veniam ratione reprehenderit ab aut natus quo totam ipsum, repellendus.
+      </div>
+    </div>
+    <div class="row justify-content-around bg-danger">
+      <div class="col-4  border">
+        <span class="h3">justify-content-around  : 자식요소들을 빼고 남은 공간을 좌우 균등하게 분배해서 나누어가짐=>아이템들의 둘레에 균일한 간격을 줌</span> Alias maiores numquam, corporis laboriosam quis debitis beatae repudiandae esse rerum. Nihil.
+      </div>
+      <div class="col-4  border">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium placeat quibusdam quos dignissimos soluta dicta officia adipisci totam, voluptates sunt!
+      </div>
+    </div>
+    <div class="row justify-content-between bg-dark text-light">
+      <div class="col-4">
+        <span class="h3">justify-content-between  : 자식요소들을 빼고 남은 공간으로 =>아이템들의 사이에 균일한 간격을 줌</span> Similique quam iste libero excepturi vero doloremque magni facere autem, odit debitis?
+      </div>
+      <div class="col-4">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, alias, cum. Non minima nemo dolorem vel saepe nihil delectus maxime.
+      </div>
+    </div>
+
+    <div class="row justify-content-xl-between bg-dark text-light">
+      <div class="col-4">
+        <span class="h3">justify-content-xl-between처럼 sm,md,lg,xl 미디어사이즈별 클래스를 모두 가지고 있어서 시작점에 모여있다가 해당 사이즈가 되면 수평 정렬된다.</span> Similique quam iste libero excepturi vero doloremque magni facere autem, odit debitis?
+      </div>
+      <div class="col-4">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, alias, cum. Non minima nemo dolorem vel saepe nihil delectus maxime.
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+</body>
+</html>
