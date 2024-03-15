@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+  <title>03_드랍다운</title>
+  <style>
+   div{
+    border:1px solid red;
+  }
+  body{
+    padding-top:500px;
+    padding-bottom: 500px;
+  }
+</style>
+</head>
+<body>
+  <div class="container">
+    <h1>1)드랍다운: 싱글버튼</h1>
+   <div class="row">
+    <div class="col-12">
+      <div class="dropdown">
+        <button class="btn btn-danger dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false">
+          Dropdown button
+        </button>
+        <a class="btn btn-warning dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+          Dropdown link
+        </a>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </div>
+    </div>
+  </div><!-- row -->
+  <h1>2)드랍다운 : 스플릿 버튼</h1>
+  <div class="row">
+    <div class="col-12">
+      <!-- Example split danger button -->
+      <div class="btn-group dropup">
+        <button type="button" class="btn btn-danger">음료 선택</button>
+        <button type="button" class="btn btn-danger dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-expanded="false">
+          <span class="sr-only">음료 선택</span>
+        </button>
+
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="#">아메리카노</a>
+          <a class="dropdown-item" href="#">카푸치노</a>
+          <a class="dropdown-item" href="#">카페라떼</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">스트로베리 쥬스</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">홍차</a>
+          <a class="dropdown-item" href="#">밀크티</a>
+        </div>
+      </div>
+      <div class="btn-group">
+        
+        <button type="button" class="btn btn-lg btn-primary ml-1">음료 선택</button>
+        <button type="button" class="btn btn-lg btn-primary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-expanded="false">
+          <span class="sr-only">음료 선택</span>
+        </button>
+
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="#">아메리카노</a>
+          <a class="dropdown-item" href="#">카푸치노</a>
+          <a class="dropdown-item" href="#">카페라떼</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">스트로베리 쥬스</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">홍차</a>
+          <a class="dropdown-item" href="#">밀크티</a>
+        </div>
+      </div>
+      <div class="btn-group dropright">
+       
+        <button type="button" class="btn btn-sm btn-success ml-1">음료 선택</button>
+        <button type="button" class="btn btn-sm btn-success dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-expanded="false">
+          <span class="sr-only">음료 선택</span>
+        </button>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="#">아메리카노</a>
+          <a class="dropdown-item" href="#">카푸치노</a>
+          <a class="dropdown-item" href="#">카페라떼</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">스트로베리 쥬스</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">홍차</a>
+          <a class="dropdown-item" href="#">밀크티</a>
+        </div>
+      </div>
+    </div>
+  </div><!-- row -->
+  <h1>3)드랍다운 : 드랍되는 컨텐츠의 방향</h1>
+  <div class="row">
+    <div class="col-12">
+      <!-- Default dropleft button -->
+      <div class="ml-5 pl-5 btn-group dropleft">
+        <button type="button" class="ml-5 btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+          Dropleft
+        </button>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="#">아메리카노</a>
+          <a class="dropdown-item" href="#">카푸치노</a>
+          <a class="dropdown-item" href="#">카페라떼</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item active" href="#">스트로베리 쥬스</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">홍차</a>
+          <a class="dropdown-item disabled" href="#">밀크티</a>
+        </div>
+      </div>
+
+      <!-- Split dropleft button -->
+      <div class="btn-group">
+        <div class="btn-group dropleft">
+          <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-expanded="false">
+            <span class="sr-only">Toggle Dropleft</span>
+          </button>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="#">아메리카노</a>
+            <a class="dropdown-item" href="#">카푸치노</a>
+            <a class="dropdown-item" href="#">카페라떼</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">스트로베리 쥬스</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">홍차</a>
+            <a class="dropdown-item" href="#">밀크티</a>
+          </div>
+        </div>
+        <button type="button" class="btn btn-secondary">
+          Split dropleft
+        </button>
+      </div>
+    </div>
+  </div><!-- row -->
+  <h1></h1>
+  <div class="row">
+    <div class="col-12"></div>
+  </div><!-- row -->
+
+
+
+  <h1>4)드랍다운 : 버튼의 위치에 맞추어 컨텐츠를 좌측 혹은 우측으로 정렬하면서 디바이스 사이즈에 따라서 방향이 바뀌도록 구현 가능</h1>
+  <div class="row">
+    <div class="col-lg-6">
+      <div class="btn-group">
+        <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" data-display="static" aria-expanded="false">
+          Left-aligned but right aligned when large screen
+        </button>
+        <div class="dropdown-menu dropdown-menu-lg-right">
+          <h5 class="dropdown-header" type="button">Action</h5>
+          <button class="dropdown-item" type="button">Another action</button>
+          <button class="dropdown-item" type="button">Something else here</button>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-6">
+      <div class="btn-group">
+        <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" data-display="static" aria-expanded="false">
+          Right-aligned but left aligned when large screen
+        </button>
+        <div class="dropdown-menu dropdown-menu-right dropdown-menu-lg-left">
+          <button class="dropdown-item" type="button">Action</button>
+          <button class="dropdown-item" type="button">Another action</button>
+          <button class="dropdown-item" type="button">Something else here</button>
+        </div>
+      </div>
+    </div>  
+  </div><!-- row -->
+</div>
+
+
+<!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+</body>
+</html>
