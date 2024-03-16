@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+    <title>01_보이고 숨기는 클래스</title>
+    <style>
+    	/*div{
+    		border:1px solid red;
+    	}*/
+      body{
+        padding-bottom: 500px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+    	<h1>bs4 starter</h1>
+      <div class="row">
+        <div class="col-12">
+          <div class="border border-danger d-inline">Lorem, ipsum dolor.</div>
+          <div class="border border-danger d-inline">Lorem, ipsum dolor.</div>
+          <span class="border border-primary d-block">Lorem, ipsum, dolor.</span>
+          <span class="border border-primary d-block">Lorem, ipsum, dolor.</span>
+          <div class="bg-info d-none">Lorem ipsum, dolor.</div>
+          <p>Lorem, ipsum dolor sit amet, consectetur adipisicing elit. Eaque non doloremque iste dolorem provident expedita corrupti voluptatum. Tempore nobis ea quaerat aliquid deserunt magni saepe, eos, fugiat modi, quod odit.</p>
+          <div class="bg-info invisible">Lorem ipsum, dolor.</div>
+          <p>Lorem, ipsum dolor sit amet, consectetur adipisicing elit. Eaque non doloremque iste dolorem provident expedita corrupti voluptatum. Tempore nobis ea quaerat aliquid deserunt magni saepe, eos, fugiat modi, quod odit.</p>
+        </div>
+      </div><!-- row -->
+
+      <div class="row">
+        <h1>1)보이고 숨기는 클래스의 원리</h1>
+        <div class="col-12">
+          <div class="bg-info d-lg-none">d-lg-none</div>
+          <div class="bg-warning d-none d-lg-block">d-none d-lg-block</div>
+        </div>
+      </div>
+       <div class="row">
+        <h1>2)보이고 숨기는 클래스의 활용:원하는 미디어사이즈에서만 숨김</h1>
+        <div class="col-12">
+          <div class="bg-info d-none">bg-info d-none</div>
+          <div class="bg-warning d-none d-sm-block">bg-warning d-none d-sm-block:sm이상에서 보인다.</div>
+          <div class="bg-danger d-sm-none d-md-block">bg-danger d-sm-none d-md-block:sm에서만 숨긴다.</div>
+          <div class="bg-primary d-md-none d-lg-block">bg-primary d-md-none d-lg-block:md에서만 숨긴다.</div>
+          <div class="bg-secondary d-lg-none d-xl-block">bg-secondary d-lg-none d-xl-block</div>
+          <div class="bg-dark d-xl-none text-light">bg-dark d-xl-none</div>
+        </div>
+      </div>
+      <div class="row">
+        <h1>3)보이고 숨기는 클래스의 활용:원하는 미디어사이즈에서만 보임</h1>
+        <div class="col-12">
+          <div class="bg-info d-block">bg-info d-block</div>
+          <div class="bg-warning  d-block d-sm-none">bg-warning d-block d-sm-none :xs에서만 보임</div>
+          <div class="bg-danger d-none d-sm-block d-md-none">bg-danger d-none d-sm-block d-md-none:sm에서만 보임</div>
+          <div class="bg-primary d-none d-md-block d-lg-none">bg-primary d-none d-md-block d-lg-none:md에서만 보임</div>
+          <div class="bg-secondary d-none d-lg-block d-xl-none">bg-secondary d-none d-lg-block d-xl-none:lg에서만 보임</div>
+          <div class="bg-dark text-light d-none d-xl-block">bg-dark d-none d-xl-block :xl에서만 보임</div>
+        </div>
+      </div>
+
+      <div class="row">
+        <h1 class="h3">스마트폰에서는 보이고 타블렛과 작은 모니터에서는 숨겨진 후 다시 큰 모니터에서는 보이도록 구현</h1>
+        <div class="w-100"></div> 
+        <div class="col-sm-6 col-xl-3 d-md-none d-xl-block">
+          <div class="card text-white bg-warning mb-3" style="max-width: 18rem;">
+            <div class="card-header">Header</div>
+            <div class="card-body">
+              <h5 class="card-title">Warning card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+          </div>
+        </div> <!-- col-sm-6 col-xl-3 -->
+        <div class="col-sm-6 col-xl-3 d-md-none d-xl-block">
+          <div class="card text-white bg-warning mb-3" style="max-width: 18rem;">
+            <div class="card-header">Header</div>
+            <div class="card-body">
+              <h5 class="card-title">Warning card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+          </div>
+        </div> <!-- col-sm-6 col-xl-3 -->
+        <div class="col-sm-6 col-xl-3 d-md-none d-xl-block">
+          <div class="card text-white bg-warning mb-3" style="max-width: 18rem;">
+            <div class="card-header">Header</div>
+            <div class="card-body">
+              <h5 class="card-title">Warning card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+          </div>
+        </div> <!-- col-sm-6 col-xl-3 -->
+        <div class="col-sm-6 col-xl-3 d-md-none d-xl-block">
+          <div class="card text-white bg-warning mb-3" style="max-width: 18rem;">
+            <div class="card-header">Header</div>
+            <div class="card-body">
+              <h5 class="card-title">Warning card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+          </div>
+        </div> <!-- col-sm-6 col-xl-3 -->
+      </div>
+
+
+
+      <div class="row">
+        <div class="col-12"></div>
+      </div>
+    </div>
+
+   
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+  </body>
+</html>

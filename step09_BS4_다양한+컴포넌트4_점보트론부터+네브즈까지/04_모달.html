@@ -1,0 +1,346 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+  <title>04_모달</title>
+  <style>
+    	/*div{
+    		border:1px solid red;
+    	}*/
+      body{
+        padding-bottom: 500px;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="container">
+    	<h1>4-1)Live demo</h1>
+      <div class="row">
+        <div class="col-12">
+          <!-- Button trigger modal -->
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal1">
+            Launch demo modal
+          </button>
+
+          <!-- Modal -->
+          <div class="modal fade" id="myModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" data-backdrop="static">
+            <div class="modal-dialog modal-dialog-scrollable">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Modal title1</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum laborum corporis maiores aspernatur repudiandae sunt. Deserunt non at accusamus, atque iusto architecto magnam, voluptatibus alias unde praesentium accusantium saepe, placeat. Et eveniet iusto non fuga, nostrum voluptas ex illum totam ullam asperiores quasi dicta laborum ipsum. Omnis delectus dolorum at veritatis quod, vitae ab, corporis porro aperiam adipisci veniam ad sint nesciunt ex similique consequuntur eveniet totam nam illo rerum distinctio. Earum fuga, tempora reiciendis illo facere exercitationem dicta, velit ea quos tempore ullam dolores vel iste temporibus consectetur nam, cum quia placeat maxime fugit veniam quisquam beatae rem odio laudantium. Placeat architecto laudantium aspernatur iure et nostrum ratione atque reprehenderit sunt. Sed dignissimos, animi magni fugit sunt error vel a odit, consectetur iure? Praesentium quo, expedita fugit maiores odio accusantium rerum alias odit, ratione. Delectus fuga obcaecati expedita atque odit enim veritatis accusantium ab blanditiis, quod facilis quos, harum reprehenderit nam labore quia illum nulla rerum officia. Quod tempora quia mollitia. Dignissimos ratione nihil eaque provident, obcaecati sit vero amet beatae modi, repudiandae libero velit, dolorum voluptatibus praesentium omnis alias. Blanditiis adipisci assumenda ea facere veritatis debitis fugiat, quae laborum, quos delectus cumque non, praesentium minus asperiores. Rem quaerat dicta impedit non, adipisci, veritatis expedita autem, nulla libero fugiat aliquam praesentium aperiam eius quos sequi similique natus ut beatae. Similique voluptatibus sapiente exercitationem laborum illo fuga corrupti in nulla natus beatae, ducimus tempora quis harum odit repellat voluptates totam autem doloremque minima, labore, rem est vitae molestias necessitatibus cum. Cupiditate reiciendis placeat temporibus repellat illo commodi, nostrum, corporis dicta, maxime laborum ab aliquid, molestiae magni optio. Est perferendis pariatur ratione minus possimus nihil magni ad, amet, laudantium placeat culpa aliquam sint unde dolorem cum veniam explicabo, dolor porro nisi quasi rem iure facere dolorum ut! Architecto odio asperiores quia exercitationem praesentium quibusdam a, maiores illo necessitatibus autem doloremque nisi nemo sit nesciunt nobis facilis accusantium deserunt perspiciatis beatae laudantium molestias consectetur reiciendis eos! Pariatur tempore sed, aliquid reprehenderit sequi eaque omnis et iure voluptas accusantium? Eaque tempora assumenda tempore culpa dolore qui cumque, odio optio in totam debitis eius, soluta, deserunt. Non blanditiis delectus, dolorem rerum incidunt, laboriosam aliquid exercitationem sed beatae, consectetur officiis quo sunt, expedita tempore. Ab nam aliquam, non voluptas earum veritatis quaerat corrupti? Voluptate pariatur quaerat temporibus sint facere iste sit itaque unde commodi quia quos beatae sunt iusto sapiente, nostrum. Odio, ad dolores modi.
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div><!-- row -->
+      <h1>4-2)Static backdrop</h1>
+      <div class="row">
+        <div class="col-12">
+          <!-- Button trigger modal -->
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal2">
+            Launch static backdrop modal
+          </button>
+
+          <!-- Modal -->
+          <div class="modal fade" id="myModal2" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  ...
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary">Understood</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div><!-- row -->
+      <h1>4-3)Varying modal content</h1>
+      <div class="row">
+        <div class="col-12">
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">Open modal for @mdo</button>
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@fat">Open modal for @fat</button>
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@getbootstrap">Open modal for @getbootstrap</button>
+
+          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">New message</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <form>
+                    <div class="form-group">
+                      <label for="recipient-name" class="col-form-label">Recipient:</label>
+                      <input type="text" class="form-control" id="recipient-name">
+                    </div>
+                    <div class="form-group">
+                      <label for="message-text" class="col-form-label">Message:</label>
+                      <textarea class="form-control" id="message-text"></textarea>
+                    </div>
+                  </form>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary">Send message</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div><!-- row -->
+      <h1>4-4)버튼마다 다르게 구현되는 모달창의 내용</h1>
+      <div class="row">
+        <div class="col-12">
+          <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#myModal3" data-whatever="@mdo">이벤트1</button>
+          <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#myModal4" data-whatever="@fat">이벤트2</button>
+          <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#myModal5" data-whatever="@getbootstrap">이벤트3</button>
+
+          <div class="modal fade" id="myModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">쿠팡 이벤트</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <form>
+                    <div class="form-group">
+                      <label for="recipient-name" class="col-form-label">Recipient:</label>
+                      <input type="text" class="form-control" id="recipient-name">
+                    </div>
+                    <div class="form-group">
+                      <label for="message-text" class="col-form-label">Message:</label>
+                      <textarea class="form-control" id="message-text"></textarea>
+                    </div>
+                  </form>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary">Send message</button>
+                </div>
+              </div>
+            </div>
+          </div><!-- modal -->
+          <div class="modal fade" id="myModal4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">11번가 이벤트</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <form>
+                    <div class="form-group">
+                      <label for="recipient-name" class="col-form-label">Recipient:</label>
+                      <input type="text" class="form-control" id="recipient-name">
+                    </div>
+                    <div class="form-group">
+                      <label for="message-text" class="col-form-label">Message:</label>
+                      <textarea class="form-control" id="message-text"></textarea>
+                    </div>
+                  </form>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary">Send message</button>
+                </div>
+              </div>
+            </div>
+          </div><!-- modal -->
+          <div class="modal fade" id="myModal5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-sm">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">지마켓 이벤트</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <form>
+                    <div class="form-group">
+                      <label for="recipient-name" class="col-form-label">Recipient:</label>
+                      <input type="text" class="form-control" id="recipient-name">
+                    </div>
+                    <div class="form-group">
+                      <label for="message-text" class="col-form-label">Message:</label>
+                      <textarea class="form-control" id="message-text"></textarea>
+                    </div>
+                  </form>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary">Send message</button>
+                </div>
+              </div>
+            </div>
+          </div><!-- modal -->
+        </div>
+      </div><!-- row -->
+      <!-- <h1>4-5)유튜브 동영상을 모달창으로 구현</h1>
+      <div class="row">
+        <div class="col-12">
+          <div id="link">
+            <button type="button" class="btn btn-warning myVideoModal" data-toggle="modal" data-target="#myVideoModal" >비디오 보기</button>
+          </div>
+          <div id="myVideoModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                </div>
+                <div class="modal-body">
+                  <iframe width="100%" height="400" src="https://www.youtube.com/embed/fFUrNKmUCt8?si=RjmkjCBlRgDsiaCV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+
+         
+         
+          </div>
+        </div>row -->
+        <div class="row">
+          <div class="col-12">
+            
+          </div>
+        </dib>
+        <h1>4-6)modal()의 매개변수 활용</h1>
+        <div class="row">
+          <div class="col-12 events">
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-danger" data-toggle="modal">
+              스타벅스 이벤트 열고닫기
+            </button>
+            <div class="w-100 my-2"></div>
+            <button type="button" class="btn btn-danger" data-toggle="modal">
+              스타벅스 이벤트 열기
+            </button>
+            <div class="w-100 my-2"></div>
+            <button type="button" class="btn btn-danger" data-toggle="modal">
+              스타벅스 이벤트 닫기
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="starbuckEvent" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-sm modal-dialog-scrollable">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">스타벅스 겨울 이벤트</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <img src="img/starbucks_event_long.jpg" alt="" width="100%">
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div><!-- row -->
+
+
+
+        <h1></h1>
+        <div class="row">
+          <div class="col-12"></div>
+        </div><!-- row -->
+      </div>
+
+
+      <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+      <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+      <script>
+        $('#exampleModal').on('show.bs.modal', function (event) {
+        var button = $(event.relatedTarget) // Button that triggered the modal
+        var recipient = button.data('whatever') // Extract info from data-* attributes
+        // If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
+        // Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
+        var modal = $(this)
+        modal.find('.modal-title').text('New message to ' + recipient)
+        modal.find('.modal-body input').val(recipient)
+      })
+        window.jQuery || document.write('<script src="js/jquery-1.10.1.min.js"><\/script>')
+        $('#link').click(function () {
+          var src = 'https://youtu.be/fFUrNKmUCt8?si=jAtVn1anb1Elcz-&amp;autoplay=1';
+          _
+          $('#myVideoModal').modal('show');
+          $('#myVideoModal iframe').attr('src', src);
+        });
+
+        $('.myVideoModal button').click(function () {
+          $('#myVideoModal iframe').removeAttr('src');
+        });
+
+        $('#myVideoModal').modal({
+          show : false
+        });
+        $('#myModal3').modal({
+          backdrop : false,
+          show : false
+        });
+        $('#myModal4').modal({
+          backdrop : false,
+          show : false
+        });
+        $('#myModal5').modal({
+          backdrop : false,
+          show : false
+        });
+        $('#starbuckEvent').modal();
+
+        let eventBtn = $('.events button');
+
+        eventBtn.css({'position':'relative','z-index':99999});
+        eventBtn.eq(0).click(function(){
+           $('#starbuckEvent').modal('toggle');
+        })
+        eventBtn.eq(1).click(function(){
+           $('#starbuckEvent').modal('show');
+        })
+        eventBtn.eq(2).click(function(){
+           $('#starbuckEvent').modal('hide');
+        })
+      </script>
+    </body>
+    </html>
