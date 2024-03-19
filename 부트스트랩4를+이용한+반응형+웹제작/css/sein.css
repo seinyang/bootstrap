@@ -1,0 +1,82 @@
+:root{
+    --gold : #F69F00;
+    --black : black;
+    --orange : #FCC704;
+    --white : white;
+}
+.bg-black{
+    background-color: black;
+}
+/* 캐로셀의 이미지 사이즈 스타일링 */
+#topCarousel{
+    overflow: hidden;
+}
+#topCarousel .carousel-item:nth-of-type(1){
+    background: url(../img/carousel_01.jpg) no-repeat center / cover;
+    height: 100vh;
+}
+#topCarousel .carousel-item:nth-of-type(2){
+    background: url(../img/carousel_02.jpg) no-repeat center / cover;
+    height: 100vh;
+}
+#topCarousel .carousel-item:nth-of-type(3){
+    background: url(../img/carousel_03.jpg) no-repeat center / cover;
+    height: 100vh;
+}
+
+/* 캐로셀 안의 캡션대신에 넣은 이미지 위치 맞추기 */
+#topCarousel .carousel-caption{
+    position:absolute;
+    /* border:1px solid red; */
+}
+#topCarousel .carousel-item:nth-of-type(1) .carousel-caption{
+    bottom: -50px;
+}
+#topCarousel .carousel-item:nth-of-type(2) .carousel-caption{
+    bottom: 50px;
+}
+#topCarousel .carousel-item:nth-of-type(3) .carousel-caption{
+    bottom: 20px;
+}
+
+/* 캐로셀 좌우 버튼이 마우스 호버시 나타나도록 설정 */
+#topCarousel .carousel-control-prev{
+    left: -200px;
+    transition:left 1s;
+}
+#topCarousel:hover .carousel-control-prev{
+    left: 0;
+}
+#topCarousel .carousel-control-next{
+    right: -200px;
+    transition:right 1s;
+}
+#topCarousel:hover .carousel-control-next{
+    right: 0;
+}
+/* 캐로셀 배경 이미지를 어둡게하여 위의 이미지 컨텐츠 부각시키기 */
+#topCarousel .carousel-item::after{
+    content:"";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.5;
+}
+
+/* 캐로셀 좌우 버튼 호버시 색상 바꾸기 */
+#topCarousel .carousel-control-prev:hover, #topCarousel .carousel-control-next:hover{
+    color:var(--gold);
+    cursor: pointer;
+}
+/* 캐로셀 하단 인디케이터 버튼 활성화시 스타일 변경 */
+#topCarousel .carousel-indicators .active{
+    background-color: var(--gold);
+}
+
+#topCarousel{
+    overflow: hidden;
+}
+.bg-black{
+    background-color: black;
+}
