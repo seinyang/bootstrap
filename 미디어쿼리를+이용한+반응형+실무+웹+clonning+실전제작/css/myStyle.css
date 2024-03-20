@@ -1,0 +1,793 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap');
+/*reset css*/
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	width: 100%;
+	overflow-x: hidden;
+}
+#wrapper{
+	font-family: 'Noto Sans KR', sans-serif;
+	font-size: 0.9rem;
+	width: 100%;
+	position: relative;
+}
+ul li, ol li{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+
+
+/*로그인*/
+#wrapper>p#login{
+	width: 60%;
+	position: absolute;
+	top:5px;
+	right:20%;
+	font-size: 0.8em;
+	z-index: 99;
+}
+#wrapper>p#login a{
+	float: right;
+	color:white;
+	display: block;
+}
+#wrapper>p#login a:nth-of-type(1), #wrapper>p#login a:nth-of-type(1)+a{
+	/*width: 28px;
+	height: 28px;*/
+	width: 15px;
+	height: 15px;
+	margin-right: 5px;
+}
+#wrapper>p#login a:nth-of-type(1){
+	background: url(../img/icon_sns_01.png) -200% 0;
+	background-size: 400%;
+}
+#wrapper>p#login a:nth-of-type(2){
+	background: url(../img/icon_sns_01.png) -300% 0;
+	background-size: 400%;
+}
+#wrapper>p#login a:nth-of-type(3)::before,#wrapper>p#login a:nth-of-type(3)::after{
+	content: "|";
+	margin:10px;
+} 
+
+/*.desktopGnb1 네비*/
+nav.desktopGnb1, nav.desktopGnb2{
+	background-color: white;
+	width: 60%;
+	height: 100px;
+	position: absolute;
+	top:40px;
+	left:20%;
+	padding: 0 20px;
+	z-index: 99999;
+}
+nav.desktopGnb2{
+	width: 100%;
+	background-color: black;
+	top:0;
+	left:0;
+	height: 60px;
+	position: fixed;
+	z-index: 99999;
+}
+nav.desktopGnb1 li{
+	float: left;
+	width: 12%;
+	height: 100px;
+	line-height: 100px;
+	text-align: center;
+}
+nav.desktopGnb2 li{
+	float: left;
+	width: 12%;
+	height: 60px;
+	line-height: 60px;
+}
+nav.desktopGnb2 li:first-child{
+	position: relative;
+	left:5%;
+}
+nav.desktopGnb1 li a, nav.desktopGnb2 li a{
+	display: block;
+	width: 100%;
+	height: 100%;
+	font-weight: bold;
+	font-size: 14px;
+	color:black;
+}
+nav.desktopGnb2 li a {
+	color: white;
+}
+nav.desktopGnb1 li:hover a, nav.desktopGnb2 li:hover a, nav.desktopGnb2 li.active a, nav.desktopGnb1 li.active a{
+	color:#F4CF02;
+}
+nav.desktopGnb1 li h1, nav.desktopGnb2 li h1{
+	text-indent: -9999px;
+	background: url(../img/h1_logo.png) no-repeat center;
+	background-size: 80%;
+}
+nav.desktopGnb2 li h1{
+	background: url(../img/bg_w_h1_logo.png) no-repeat center;
+	width: 30px;
+	height: 30px;
+	background-size: contain;
+	margin:12px auto;
+}
+nav.desktopGnb2 li a{
+	display: block;
+	position: relative;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+}
+nav.desktopGnb2 li a::after{
+	content: "";
+	width: 0;
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom:0;
+	height: 5px;
+	transition: width 0.5s;
+	margin:0 auto;
+}
+nav.desktopGnb2 li:hover a::after, nav.desktopGnb2 li.active a::after{
+	width: 50%;
+	background-color: orange;
+}
+nav.desktopGnb2 li:first-child:hover a::after{
+	width: 0;
+}
+
+/*캐로셀 #brand*/
+section#brand.carousel{
+	width: 100%;
+	height: 650px;
+	position: relative;
+/*	border:1px solid orange;*/
+}
+section#brand.carousel ul.gallery li{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+section#brand.carousel ul.gallery li:nth-child(1){
+	background: url(../img/carousel_0001.jpg) center;
+}
+section#brand.carousel ul.gallery li:nth-child(2){
+	background: url(../img/carousel_0002.jpg) center;
+}
+section#brand.carousel ul.gallery li:nth-child(3){
+	background: url(../img/carousel_0003.jpg) center;
+}
+section#brand.carousel ul.gallery li:nth-child(4){
+	background: url(../img/carousel_0004.jpg) center;
+}
+section#brand.carousel ul.gallery li:nth-child(5){
+	background: url(../img/carousel_0005.jpg) center;
+}
+section#brand.carousel ul.gallery li:nth-child(6){
+	background: url(../img/carousel_0006.jpg) center;
+}
+section#brand.carousel ul.gallery li:nth-child(7){
+	background: url(../img/carousel_0007.jpg) center;
+}
+section#brand.carousel ul.gallery li:nth-child(8){
+	background: url(../img/carousel_0008.jpg) center;
+}
+/*캐로셀 버튼*/
+section#brand.carousel div.carousel_btn{
+/*		border:1px solid red;*/
+	position: absolute;
+	width: 70%;
+	left:20%;
+	bottom: 0;
+	}
+section#brand.carousel div.carousel_btn ul.btn{
+	position: absolute;
+	left:10px;
+	width: 500px;
+	height: 50px;
+	bottom: 30px;
+	}
+section#brand.carousel div.carousel_btn ul.btn li{
+	width: 45px;
+	height: 8px;
+	background: #D3D3D3;
+	float: left;
+	margin:auto 3px;
+	cursor: pointer;
+	text-indent: -9999px;
+	}
+section#brand.carousel div.carousel_btn ul.btn li:hover, section#brand.carousel div.carousel_btn ul.btn li.active{
+	background-color: orange;
+	}
+section#brand.carousel div.carousel_btn ul.btn li.pause{
+	width: 45px;
+	height: 45px;
+	background: url(../img/icon_play.png);
+	background-size: 90px;
+	position: relative;
+	bottom: 20px;
+	}
+section#brand.carousel div.carousel_btn ul.btn li.play{
+	width: 45px;
+	height: 45px;
+	background: url(../img/icon_play.png);
+	background-size: 90px;
+	position: relative;
+	bottom: 20px;
+	background-position: -45px;
+	display: none;
+	}
+
+/*두번째 컨텐츠 #menu*/
+section#menu, section#story, section#ingredients, section#more{
+	width: 60%;
+	height: 500px;
+	position: relative;
+	margin:60px auto;
+}
+section#menu div.content, section#story div.content{
+	width: 48%;
+	height: 100%;
+	float: left;
+	background-color: #E9E4E4;
+	margin:0 1%;
+	cursor: pointer;
+	border-bottom: 5px solid #6B6464;
+	transition: border-bottom 0.5s;
+}
+section#menu div.content div.img, section#story div.content div.img{
+	width: 100%;
+	height: 300px;
+	background: url(../img/main_img_01.jpg) no-repeat center;
+	background-size: cover;
+}
+section#menu div.content:nth-child(2) div.img{
+	background: url(../img/main_img_02.jpg) no-repeat center;
+}
+section#menu div.content:hover, section#story div.content:hover{
+	border-bottom: 5px solid orange;
+}
+section#menu div.content p, section#story div.content p{
+	padding:20px;
+	font-size: 1.3em;
+}
+section#menu div.content span.play_btn, section#story div.content span.play_btn, section#ingredients div.content span.play_btn{
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	background: url(../img/btn_link.png);
+	background-size: 40px;
+	margin:5px 10px 5px 20px;
+	transition: background-position 0.5s;
+}
+section#menu div.content:hover span.play_btn, section#story div.content:hover span.play_btn, section#ingredients div.content:hover span.play_btn{
+	background-position: -20px;
+}
+section#menu div.content span.play_btn+span, section#story div.content span.play_btn+span{
+	position: relative;
+	top:-10px;
+}
+
+/*세번째 컨텐츠 #story*/
+section#story div.content{
+	width: 33%;	
+}
+section#story div.content:first-child{
+	width: 28%;	
+	background-color: orange;
+	padding:30px;
+}
+section#story div.content p{
+	background-color: #E9E4E4;
+}
+section#story div.content:first-child p{
+	padding: 30px 0;
+	font-size: 1.8em;
+	font-weight: bold;
+	background-color:orange;
+}
+section#story div.content:nth-child(2) div.img{
+	background: url(../img/main_img_03.jpg) no-repeat top;
+	background-size: 100%;
+}
+section#story div.content:nth-child(3) div.img{
+	background: url(../img/main_img_04.jpg) no-repeat top;
+	background-size: 100%;
+}
+section#story div.content:nth-child(1) p::after, section#philosophy div.content p::after, section#ingredients div.content p::after{
+	content:"";
+	width: 40px;
+	height: 4px;
+	background-color: black;
+	display: block;
+	margin-top: 30px;
+}
+/*section#philosophy*/
+section#philosophy{
+	width: 100%;
+	height: 650px;
+	position: relative;
+	overflow: hidden;
+}
+section#philosophy div.bg{
+	width: 100%;
+	height: 100%;
+	background: url(../img/main_visual_02.jpg) no-repeat center;
+	background-size: cover;
+	transition:transform 5s;
+	position: absolute;
+}
+section#philosophy div.bg:hover{
+	transform: scale(1.1);
+}
+section#philosophy>div.content{
+	width: 370px;
+	height: 100%;
+	background-color: black;
+	position: absolute;
+	padding:80px 30px;
+	opacity: 0.9;
+	color:white;
+	left:50%;
+	margin-left: -600px;
+}
+section#philosophy div.content p, section#ingredients div.content p{
+	font-size: 2.2em;
+	font-weight: bold;
+}
+section#philosophy div.content p::after{
+	background-color: white;
+	margin-bottom: 30px;
+}
+section#philosophy div.btn{
+	border:2px solid white;
+	width: 170px;
+	height: 60px;
+	text-align: center;
+	margin-top: 100px;
+	line-height: 60px;
+	cursor: pointer;
+}
+section#philosophy div.btn:hover{
+	background-color: white;
+	color:black;
+}
+
+/*section#ingredient*/
+section#ingredients div.bg{
+	background: url(../img/main_img_05.jpg) left center;
+	width: 80%;
+	height: 100%;
+	background-size: cover ;
+	position: absolute;
+	left:0;
+}
+section#ingredients .content{
+	width: 380px;
+	height: 100%;
+	position: absolute;
+	background-color: #C7BFBF;
+	padding: 30px;
+	right: 0;
+}
+section#ingredients .content .paragraph{
+	position: relative;
+	top: 20px;
+}
+section#ingredients .content div{
+	position: absolute;
+	bottom: 20px;
+}
+section#ingredients .content div .play_btn{
+	position: relative;
+	top: 10px
+}
+section#ingredients .content:hover{
+	border-bottom: 5px solid orange;
+	cursor: pointer;
+}
+
+/*section#more*/
+section#more span{
+	font-size: 1.5em;
+	font-weight: bold;
+	position: absolute;
+}
+section#more span+span{
+	width: 80%;
+	height: 15px;
+	background-color: #271E1E;
+	position: absolute;
+	left:20%;
+	top: 10px;
+}
+section#more .content{
+	width: 32%;
+	height: 260px;
+	float: left;
+	position: relative;
+	top: 100px;
+	margin-right: 2%;
+}
+section#more .content:nth-child(2){
+	background: url(../img/more_hansot.jpg) no-repeat center;
+	background-size: cover;
+}
+section#more .content:nth-child(3){
+	background: url(../img/more_event.jpg) no-repeat center;
+	background-size: cover;
+}
+section#more .content:nth-child(4){
+	background: url(../img/more_news.jpg) no-repeat center;
+	background-size: cover;
+	margin-right: 0
+}
+section#more .content div{
+	width: 100%;
+	height: 50px;
+	background-color: #271E1E;
+	position: absolute;
+	bottom: 0;
+	color: white;
+	line-height: 50px;
+	cursor: pointer;
+}
+section#more .content div p{
+	padding-left: 20px;
+	font-weight: bold;
+}
+section#more .content:hover div{
+	color:orange;
+}
+section#more .content div p::after{
+	content: "";
+	width: 6px;
+	height: 10px;
+	position: absolute;
+	background: url(../img/icon_cont_more.png);
+	background-size: 12px;
+	right:10px;
+	top: 20px;
+}
+section#more .content:hover div p::after{
+	background-position: -6px;
+}
+
+/*footer*/
+#footer{
+	width: 100%;
+	background-color: orange;
+	text-align: center;
+	padding: 50px;
+}
+#footer .info{
+	width: 640px;
+	position: absolute;
+	left:50%;
+	margin-left: -320px;
+}
+#footer .info li{
+	float: left;
+}
+#footer .info li::after{
+	content: "";
+	width: 2px;
+	height: 14px;
+	background-color: #403C3C;
+	display: inline-block;
+	margin: 0 15px;
+}
+#footer .info li:last-child::after{
+	content:none;
+}
+#footer p{
+	margin:10px;
+}
+#footer p:nth-of-type(1){
+	margin-top: 60px;
+}
+#footer .sns a{
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+	background: url(../img/icon_sns_02.png);
+	background-size: 80px;
+	margin: 10px;
+}
+#footer .sns a:nth-child(2){
+	background-position: -40px;
+}
+#footer .md_copyright{
+	display: none;
+}
+#footer .awards span{
+	width: 174px;
+	height: 60px;
+	background: url(../img/logo_webaward2017.png);
+	display: inline-block;
+	float: right;
+}
+.sm_awards{
+	display: none;
+}
+
+/********************************************************/
+/****************반응형 미디어 쿼리 **********************/
+/********************************************************/
+
+/*1)디바이스 장치가 최소 1200px일 때=>모니터의 크기가 1200px이상일 때=> laptop 큰 모니터용*/
+@media screen and (min-width:1200px){
+	nav.mobileGnb{
+		display: none;
+	}
+
+
+
+
+}
+
+/*2)디바이스 장치가 최대 1199px일 때=>모니터의 크기가 1199px이하일 때=> laptop 작은 모니터용 혹은 노트북 정도의 가로크기*/
+@media screen and (max-width:1199px){
+	body{
+		width: 100%;
+		height: 100%;
+	}
+	body.hidden{
+		overflow: hidden;
+	}
+	nav.desktopGnb1, nav.desktopGnb2{
+		display: none !important;
+	}
+	nav.mobileGnb{
+		display: block;
+		background-color: white;
+		padding:10px 0;
+	}
+	nav.mobileGnb ul.mobileMenu{
+		display: none;
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		background-color: white;
+		top:0;
+		padding-top: 50px;
+		z-index: 9999999;
+	}
+	nav.mobileGnb a{
+		color:black;
+	}
+	nav.mobileGnb h1{
+		width: 25px;
+		height: 25px;
+		background: url(../img/m_h1_logo.png) no-repeat;
+		background-size: contain;
+		text-indent: -9999px;
+		margin: 15px;
+	}
+	nav.mobileGnb ul.mobileMenu li:last-child{
+		position: absolute;
+		right:10px;
+		top:10px;
+		font-weight: bold;
+		font-size: 2em;
+	}
+	nav.mobileGnb ul.mobileMenu li:last-child span{
+		font-size: 1.5em;
+		cursor: pointer;
+	}
+	nav.mobileGnb .hambergerBtn{
+		display: block;
+		position: absolute;
+		top:10px;
+		right:10px;
+		font-size: 2em;
+	}
+	nav.mobileGnb .hambergerBtn span{
+		font-size: 1.5em;
+	}
+	nav.mobileGnb ul.mobileMenu li a{
+		line-height: 3.5em;
+		margin-left: 50px;
+		font-weight: bold;
+	}
+	nav.mobileGnb ul.mobileMenu li:hover a{
+		color:orange;
+	}
+
+	/*캐로셀의 height조절*/
+
+	section#brand.carousel{
+		height: 350px;
+	}
+	section#brand.carousel ul.gallery li{
+		background-size: cover !important;
+	}
+	section#brand.carousel div.carousel_btn ul.btn{
+		bottom: -20px;
+	}
+
+	/*section#menu*/
+	section#menu, section#story{
+		width: 100%;
+	}
+	section#story div.content{
+		width: 48%;
+	}
+	section#story div.content:nth-child(1){
+		width: 98%;
+		height: 300px;
+		margin-bottom: 15px;
+	}
+	
+	/*section#philosophy*/
+	section#philosophy{
+		top:60px;
+	}
+	section#philosophy>div.content{
+		position: absolute;
+		left:0;
+		margin-left: 0
+	}
+
+	/*section#ingredients*/
+	section#ingredients{
+		width: 100%;
+	}
+	section#ingredients{
+		padding: 60px;
+	}
+	section#ingredients div.bg{
+		left: 0px;
+	}
+	section#ingredients .content{
+		width: 280px;
+	}
+	section#ingredients .content p.title{
+		font-size: 1.5em;
+	}
+	/*section#more*/
+	section#more{
+		display: none;
+	}
+	/*	footer*/
+	#footer{
+		position: relative;
+		top: 60px;
+	}
+	#footer .lg_copyright{
+		display: none;
+	}
+	#footer .md_copyright{
+		display: block;
+	}
+	.md_awards{
+		display: none;
+	}
+	.sm_awards{
+		display: inline-block;
+		text-align: center;
+	}
+	#footer .md_copyright .companyInfo{
+		border-top:1px solid #D19511;
+		border-bottom:1px solid #D19511;
+		padding: 10px;
+		cursor: pointer;
+	}
+	#footer .md_copyright .companyInfo span{
+		display: inline-block;
+		width: 12px;
+		height: 8px;
+		background: url(../img/icon_select_up.png);
+		background-size: 12px 8px;
+		margin-left: 10px;
+	}
+	#footer .md_copyright .companyInfo span.down{
+		background: url(../img/icon_select_down.png);
+		background-size: 12px 8px;
+	}
+	#footer .md_copyright div{
+		background-color: #E4A211;
+		text-align: left;
+		padding: 10px;
+		margin: 0;
+	}
+	#footer .md_copyright div p{
+		position: relative;
+		top: -30px;
+	}
+
+}
+
+/*3)디바이스 장치가 768이상이면서 1198이하일 때=>타블렛 사이즈*/
+@media screen and (min-width:768px) and (max-width:1198px){
+
+
+
+
+	
+}
+
+/*4)디바이스 장치가 최대 767px일 때=>모니터의 크기가 767px이하 때=> 스마트폰 가로 세로용*/
+@media screen and (max-width:767px){
+	section#brand.carousel ul.gallery li:nth-child(1){
+	background: url(../img/carousel_001.jpg) center;
+	}
+	section#brand.carousel ul.gallery li:nth-child(2){
+		background: url(../img/carousel_002.jpg) center;
+	}
+	section#brand.carousel ul.gallery li:nth-child(3){
+		background: url(../img/carousel_003.jpg) center;
+	}
+	section#brand.carousel ul.gallery li:nth-child(4){
+		background: url(../img/carousel_004.jpg) center;
+	}
+	section#brand.carousel ul.gallery li:nth-child(5){
+		background: url(../img/carousel_005.jpg) center;
+	}
+	section#brand.carousel ul.gallery li:nth-child(6){
+		background: url(../img/carousel_006.jpg) center;
+	}
+	section#brand.carousel ul.gallery li:nth-child(7){
+		background: url(../img/carousel_007.jpg) center;
+	}
+	section#brand.carousel ul.gallery li:nth-child(8){
+		background: url(../img/carousel_008.jpg) center;
+	}
+	/*캐로셀 버튼*/
+	section#brand.carousel div.carousel_btn ul.btn{
+		left:-25%;
+	}
+
+	/*section#story*/
+	section#story{
+		height: 350px;
+		padding: 0;
+	}
+	section#story div.content:nth-child(2) p, section#story div.content:nth-child(2) span, section#story div.content:nth-child(3) p, section#story div.content:nth-child(3) span{
+		position: relative;
+		top:-150px;
+	}
+	section#story div.content span.play_btn+span{
+		top:-160px;
+	}
+
+	/*section#philosophy*/
+	section#philosophy>div.content{
+		position: absolute;
+		width: 90%;
+		height: 90%;
+		top:5%;
+		left:5%;
+	}
+	
+	/*section#ingredients*/
+	section#ingredients div.bg{
+		width: 100%;
+		height: 50%;
+		position: absolute;
+		background-size: cover;
+		left: 0;
+	}
+	section#ingredients .content{
+		width: 100%;
+		height: 70%;
+		position: absolute;
+		top: 60%;
+	}
+
+	#footer{
+		top: 150px;
+	}
+}

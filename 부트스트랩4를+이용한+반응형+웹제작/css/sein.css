@@ -80,3 +80,48 @@
 .bg-black{
     background-color: black;
 }
+/* 세번째 메뉴의 배경이미지 */
+section#secret{
+    background: url(../img/menu3_about_bg.jpg) no-repeat center / cover fixed;
+    padding:80px;
+    /* background-attachment: fixed; */
+}
+
+/* 네브바의 스타일 변경 */
+.navbar{
+    font-size: 0.8rem;
+}
+.navbar .nav-link{
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.navbar-dark .navbar-nav .active>.nav-link, .navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .nav-link.show, .navbar-dark .navbar-nav .show>.nav-link{
+    color: orange;
+}
+
+
+.navbar-dark .navbar-nav .nav-link{
+    color:var(--white)
+}
+
+body { 
+    font-family: 'Jeju Gothic', sans-serif;
+    height:100vh;
+    position: relative; /* scrollspy를 위한 속성값 */
+   }
+   section#cf{
+    background: url(../img/menu4_background_bg.jpg) no-repeat center / cover fixed;;
+    padding:80px;
+}
+
+/* 다섯번째 메뉴의 배경이미지 */
+section#contact{
+    background: url(../img/menu7_background_bg.jpg) no-repeat center / cover fixed;;
+    padding:80px;
+}
+.form-control::placeholder{
+    color:white;
+}
+#inputState option{
+    color:gray;
+}
