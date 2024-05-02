@@ -5,3 +5,5 @@ const loginButton = loginForm.querySelector("#login-form button");
 function loginButton(){
     
 }
+
+loginButton();
