@@ -7,3 +7,7 @@ function loginButton(){
 }
 
 loginButton();
+
+function logub(){}
+
+logub
