@@ -4,7 +4,7 @@ function onGeoOk(position){
 
 function onGeoError(){
 
-
+const sein=document.querySelector();
 }
 
 navigator.geolocation.getCurrentPosition(onGeoOk,onGeoError);
